@@ -56,7 +56,7 @@ h1{
 .inicio p{
     font-size: 40px;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-family: "Rubik Wet Paint", serif;
     /* font-family: "Mrs Sheppards", serif; */
     font-weight: 400;
@@ -66,7 +66,7 @@ h1{
     margin-top: -30px;
 }
 .imagen img{
-    width: 150px;
+    width: 140px;
     margin-bottom: -10px;
 }
 @media (width < 550px) {
@@ -579,10 +579,10 @@ h1{
 }
 .libro{
     text-align: center;
-    font-family: "Tangerine", serif;
-    font-weight: 800;
-    font-size: 2.9rem;
-    color: #666;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #888888df;
 }
 .fin{
     padding-top: 30px;
@@ -595,13 +595,24 @@ h1{
 .foto{
     width: 95%;
 }
+@media (width < 700px) {
+    .biblico{
+        font-size: 2.5rem;
+    }
+    .libro{
+        font-size: 1.5rem;
+    }
+    .fin{
+        font-size: 3rem;
+    }
+}
 
 @media (width < 515px) {
     .biblico{
         font-size: 2.2rem;
     }
     .libro{
-        font-size: 2.3rem;
+        font-size: 1.3rem;
     }
     .fin{
         font-size: 3rem;
@@ -609,10 +620,21 @@ h1{
 }
 @media (width < 390px) {
     .biblico{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .libro{
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+    .fin{
+        font-size: 2.2rem;
+    }
+}
+@media (width < 300px) {
+    .biblico{
+        font-size: 1.6rem;
+    }
+    .libro{
+        font-size: 0.9rem;
     }
     .fin{
         font-size: 2.2rem;
@@ -620,10 +642,10 @@ h1{
 }
 @media (width < 260px) {
     .biblico{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .libro{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .fin{
         font-size: 2.1rem;
