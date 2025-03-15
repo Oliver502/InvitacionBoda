@@ -7,6 +7,7 @@ let parrafoMinutos = document.querySelector("#minutos");
 let parrafoSegundos = document.querySelector("#segundos");
 let spanFecha = document.querySelector("#fecha");
 let cuentaAtras = document.querySelector("#cuenta-atras");
+let llego = document.querySelector("#llego");
 
 /* spanFecha.innerHTML = fecha.toLocaleDateString(); */
 
@@ -32,9 +33,10 @@ let intervalo = setInterval(() => {
     parrafoMinutos.innerText = minutos < 10 ? "0" + minutos : minutos;
     parrafoSegundos.innerText = segundos < 10 ? "0" + segundos : segundos;
     
-    if (dias = 0) {
+    if (dias == 0 && horas == 0 && minutos == 0 && segundos == 0) {
         clearInterval(intervalo);
-        cuentaAtras.innerHTML = "<p class='grande'>¡Es Hoy, Es Hoy!</p>"
+        cuentaAtras.style.display = "none";
+        llego.innerHTML = "<div><p class='hoy'>¡Es Hoy!</p></div>";
     }
     
 }, 1000)
